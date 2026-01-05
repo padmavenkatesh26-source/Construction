@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="YOUR COMPANY NAME - Construction & renovations. Free estimates." />
+  <title>Contact | YOUR COMPANY NAME</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__msg">Licensed • Insured • Free Estimates</div>
+    <div class="topbar__actions">
+      <a class="topbar__link" href="tel:+13125550123">Call: (312) 555-0123</a>
+      <span class="dot">•</span>
+      <a class="topbar__link" href="contact.html">Get a Quote</a>
+    </div>
+  </div>
+</div>
+
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <div class="brand__mark" aria-hidden="true">🏗️</div>
+      <div class="brand__text">
+        <div class="brand__name">YOUR COMPANY NAME</div>
+        <div class="brand__tag">Construction • Renovations • Remodeling</div>
+      </div>
+    </a>
+
+    <button class="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">≡</button>
+
+    <nav class="nav" id="navMenu">
+      <a class="" href="index.html">Home</a>
+      <a class="" href="services.html">Services</a>
+      <a class="" href="projects.html">Projects</a>
+      <a class="" href="about.html">About</a>
+      <a class="btn btn--small btn--primary" href="contact.html">Get Quote</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="section section--alt" id="contact">
+  <div class="container">
+    <div class="contact">
+      <div class="contact__info">
+        <h2>Get a Free Quote</h2>
+        <p>Tell us what you’re planning. We’ll reply within 24 hours with next steps.</p>
+
+        <div class="contact__cards">
+          <a class="infoCard" href="tel:+13125550123">
+            <div class="infoCard__icon">📞</div>
+            <div>
+              <div class="infoCard__title">Call</div>
+              <div class="infoCard__text">(312) 555-0123</div>
+            </div>
+          </a>
+
+          <a class="infoCard" href="https://wa.me/13125550123" target="_blank" rel="noopener">
+            <div class="infoCard__icon">💬</div>
+            <div>
+              <div class="infoCard__title">WhatsApp</div>
+              <div class="infoCard__text">Message us</div>
+            </div>
+          </a>
+
+          <a class="infoCard" href="mailto:hello@yourcompany.com">
+            <div class="infoCard__icon">✉️</div>
+            <div>
+              <div class="infoCard__title">Email</div>
+              <div class="infoCard__text">hello@yourcompany.com</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="note">
+          <strong>Tip:</strong> For best results, include photos and measurements in your message.
+        </div>
+      </div>
+
+      <div class="contact__form">
+        <h3>Request a quote</h3>
+
+        <!-- Optional Formspree:
+             Replace REPLACE_ME with your endpoint (e.g., https://formspree.io/f/abcdwxyz)
+             Or remove this form and keep only Call/WhatsApp cards above.
+        -->
+        <form action="https://formspree.io/f/REPLACE_ME" method="POST">
+          <label>
+            Full Name
+            <input name="name" type="text" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Phone
+            <input name="phone" type="tel" placeholder="(312) 555-0123" required />
+          </label>
+
+          <label>
+            Email (optional)
+            <input name="email" type="email" placeholder="you@email.com" />
+          </label>
+
+          <label>
+            Service
+            <select name="service" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Home Renovation</option>
+              <option>Remodeling</option>
+              <option>Commercial Work</option>
+              <option>Repairs & Maintenance</option>
+            </select>
+          </label>
+
+          <label>
+            Project Details
+            <textarea name="message" rows="5" placeholder="Tell us what you want done, timeline, and location." required></textarea>
+          </label>
+
+          <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+
+          <button class="btn btn--primary btn--full" type="submit">Send Request</button>
+
+          <p class="formNote">By submitting, you agree we may contact you about your request.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <div class="footer__brand">YOUR COMPANY NAME</div>
+      <div class="footer__small">© <span id="year"></span> All rights reserved.</div>
+    </div>
+
+    <div class="footer__links">
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

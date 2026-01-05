@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="YOUR COMPANY NAME - Construction & renovations. Free estimates." />
+  <title>Projects | YOUR COMPANY NAME</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__msg">Licensed • Insured • Free Estimates</div>
+    <div class="topbar__actions">
+      <a class="topbar__link" href="tel:+13125550123">Call: (312) 555-0123</a>
+      <span class="dot">•</span>
+      <a class="topbar__link" href="contact.html">Get a Quote</a>
+    </div>
+  </div>
+</div>
+
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <div class="brand__mark" aria-hidden="true">🏗️</div>
+      <div class="brand__text">
+        <div class="brand__name">YOUR COMPANY NAME</div>
+        <div class="brand__tag">Construction • Renovations • Remodeling</div>
+      </div>
+    </a>
+
+    <button class="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">≡</button>
+
+    <nav class="nav" id="navMenu">
+      <a class="" href="index.html">Home</a>
+      <a class="" href="services.html">Services</a>
+      <a class="is-active" href="projects.html">Projects</a>
+      <a class="" href="about.html">About</a>
+      <a class="btn btn--small btn--primary" href="contact.html">Get Quote</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="section section--alt" id="projects">
+  <div class="container">
+    <div class="section__head">
+      <h2>Recent Projects</h2>
+      <p>Click a tile to preview. Replace the SVG placeholders with real photos anytime.</p>
+    </div>
+
+    <div class="grid gallery" aria-label="Project gallery">
+      <button class="gallery__item" data-modal="assets/img/project-1.svg" data-alt="Kitchen upgrade preview" aria-label="Open project 1">
+        <img src="assets/img/project-1.svg" alt="Kitchen upgrade placeholder" />
+        <span class="gallery__cap">Kitchen Upgrade</span>
+      </button>
+      <button class="gallery__item" data-modal="assets/img/project-2.svg" data-alt="Bathroom remodel preview" aria-label="Open project 2">
+        <img src="assets/img/project-2.svg" alt="Bathroom remodel placeholder" />
+        <span class="gallery__cap">Bathroom Remodel</span>
+      </button>
+      <button class="gallery__item" data-modal="assets/img/project-3.svg" data-alt="Basement finish preview" aria-label="Open project 3">
+        <img src="assets/img/project-3.svg" alt="Basement finish placeholder" />
+        <span class="gallery__cap">Basement Finish</span>
+      </button>
+      <button class="gallery__item" data-modal="assets/img/project-4.svg" data-alt="Exterior refresh preview" aria-label="Open project 4">
+        <img src="assets/img/project-4.svg" alt="Exterior refresh placeholder" />
+        <span class="gallery__cap">Exterior Refresh</span>
+      </button>
+    </div>
+
+    <div class="center mt-24">
+      <a class="btn btn--primary" href="contact.html">Request a Quote</a>
+    </div>
+  </div>
+</section>
+
+<div class="modal" id="imgModal" aria-hidden="true" role="dialog" aria-label="Image preview">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__content" role="document">
+    <button class="modal__close" aria-label="Close preview" data-close>✕</button>
+    <img id="modalImg" src="" alt="Project preview" />
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <div class="footer__brand">YOUR COMPANY NAME</div>
+      <div class="footer__small">© <span id="year"></span> All rights reserved.</div>
+    </div>
+
+    <div class="footer__links">
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
