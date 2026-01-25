@@ -473,3 +473,22 @@ textarea{resize: vertical}
   .nav.is-open{display:flex}
   .hero__stats{grid-template-columns: 1fr}
 }
+/* Multiple images inside hero */
+.hero__media-grid{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap:10px;
+}
+
+.hero__media-grid img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius: 14px;
+}
+
+/* Make first image big */
+.hero__media-grid img:first-child{
+  grid-row: span 2;
+}
